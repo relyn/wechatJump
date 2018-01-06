@@ -13,9 +13,6 @@ public class JumpMain {
     private static Point secondPoint;
 
 	public static void main(String[] args) {
-		int distance = getDistance("C:/Users/Relyn/Desktop/screenshot.png");
-		System.out.println(distance);
-		/*
 		int lastDistance = 0;
 		while(true) {
 			String command = "cmd /c C:\\Users\\Relyn\\Desktop\\screenshot.bat";
@@ -57,7 +54,7 @@ public class JumpMain {
 	        	adjust = 230;
 	        delayMs = distance + adjust;
 //	        HttpClientUtil.invokeGet("http://192.168.11.2/jfinal_pi/i2cPwmDelay/" + distance, null, "utf-8", 2000, 2000);
-	        HttpClientUtil.invokeGet("http://192.168.11.2/jfinal_pi/gpioRelay/" + delayMs, null, "utf-8", 2000, 2000);
+//	        HttpClientUtil.invokeGet("http://192.168.11.2/jfinal_pi/gpioRelay/" + delayMs, null, "utf-8", 2000, 2000);
 	        System.out.println("[*] 中心点长度：" + distance + "像素，延迟：" + delayMs + "ms，校准：" + adjust + "ms");
 			try {
 				Thread.sleep(1500);
@@ -66,7 +63,6 @@ public class JumpMain {
 				e1.printStackTrace();
 			}
 		}
-		*/
 	}	
 	
 	/**
